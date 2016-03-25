@@ -29,7 +29,7 @@ THE SOFTWARE.
 
 - (void)pluginInitialize
 {
-	self.webView.dataDetectorTypes = UIDataDetectorTypeNone;
+	((UIWebView *)self.webView).dataDetectorTypes = UIDataDetectorTypeNone;
 	NSLog(@"Disabled data detectors.");
 }
 
